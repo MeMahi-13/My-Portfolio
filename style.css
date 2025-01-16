@@ -1,0 +1,226 @@
+
+.tangerine-regular{
+    font-family: "Tangerine", serif;
+    font-weight: bolder;
+    font-style: normal;
+  }
+  
+.text-color{
+    color: #354E73 ;
+}
+
+body{
+    background-color: #DBE6F5;
+
+}
+.logo{
+    padding: 8px;
+}
+header{
+    background-color: #CBDCF3;
+    width: 100%;
+    
+}
+nav{
+    /* background-color: #CBDCF3; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav ul {
+    display: flex;
+    
+}
+nav ul li{
+    list-style: none;
+    padding: 15px 30px;
+    font-weight: bold;
+
+}
+nav li a{
+    color: #354E73 ;
+    text-decoration: none;
+    
+}
+nav li a:hover{
+color: white;
+font: 30px;
+background-color: #354E73;
+padding: 20px;
+border-radius: 12px;
+font-weight: 500px;
+
+}
+h1{
+    font-size: 16px;
+    padding: 18px 5px 5px 10px;
+    color: #354E73 ;
+    
+}
+.mail{
+    display: flex;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.cloud{
+    width: 33%;
+}
+
+.title{
+    font-size: 35px;
+    padding-top:40px ;
+    
+}
+.main-title{
+    font-size: 80px;
+}
+.main-subtitle{
+    font-size: 30px;
+    margin-left: 55%;
+
+
+}
+.mountain-container{
+    display: flex;
+    justify-content: center;
+    height: 20em;
+    width: 90em;
+}
+
+.slidein {
+    float:right;
+
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -10%;
+    }
+    to {
+        margin-right: 0%;
+    }
+}
+
+.work{
+    background-color: white;
+    margin: 20px;
+    border-radius: 12px;
+}
+.head{
+    text-align: center;
+    font-size: 30px;
+}
+.card1{
+    
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 30px 30px 30px;
+}
+.card1 img{
+    width: 18%;
+}
+.work-title{
+    width: 35%;
+    text-align: left;
+    padding: 40px;
+    background-color: #CBDCF3;
+    border-radius: 12px;
+
+}
+
+.work-title h2{
+    color: #354E73;
+}
+.work-title p{
+    font-size: 20px;
+}
+.card2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    padding: 30px;
+}
+.card2 img{
+    width: 18%;
+}
+
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+    margin: 5%;
+}
+.skill-card{
+    margin: 3%;
+    background-color: aliceblue;
+    border-radius: 12px;
+    padding: 40px;
+    
+}
+.skill-card:hover{
+    background-color: rgb(242, 187, 120);
+}
+.skill-card h1{
+    font-size: 25px;
+}
+
+.project-container{
+display: flex;
+justify-content: center;
+margin: 2%;
+
+}
+.project-card{
+    margin: 2%;
+    width: 25%;
+}
+.project-title{
+    position: relative;
+    bottom: 50%;
+}
+.project-title h1{
+    background-color: aquamarine;
+    color-grad
+}
+.pro-1{
+    height: 90%;
+    width: 100%;
+    border-radius: 12px;
+    
+}
+
+@media screen and (max-width: 576px) {
+.navbar, .nav-menu{
+      flex-direction: column;
+    }
+    .main-container{
+        width: 350px;
+    }
+    .main-subtitle{
+        font-size: 15px;
+    }
+    .mountain-container{
+        display: flex;
+        justify-content: start;
+        width: 40%;
+    }
+    .card1, .card2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card1 img, .card2 img{
+        width: 50%;
+    }
+    .work-title{
+        width: 80%;
+    }
+    .skill-container{
+        grid-template-columns: repeat(1,95%);
+        
+    }
+  }
